@@ -1,0 +1,534 @@
+Page weather
+    Attributes
+        ID                 : 0
+        Scope              : local
+        Dragging           : 0
+        Send Component ID  : disabled
+        Opacity            : 127
+        Width              : 480
+        Effect             : load
+        Effect Priority    : 0
+        Effect Time        : 300
+        Locked             : no
+        Swide up page ID   : disabled
+        Swide down page ID : disabled
+        Swide left page ID : disabled
+        Swide right page ID: disabled
+        Fill               : picture
+        Back. Picture ID   : 4
+    
+    Events
+        Preinitialize Event
+            t0.txt=varWeaTemp.txt
+            //
+            if(varWeaIcon.txt=="")
+            {
+                weather.pWea.pic=7
+            }
+            if(varWeaIcon.txt=="01d")
+            {
+                weather.pWea.pic=9
+            }
+            if(varWeaIcon.txt=="01n")
+            {
+                weather.pWea.pic=25
+            }
+            if(varWeaIcon.txt=="02d")
+            {
+                weather.pWea.pic=21
+            }
+            if(varWeaIcon.txt=="02n")
+            {
+                weather.pWea.pic=23
+            }
+            if(varWeaIcon.txt=="09d"||varWeaIcon.txt=="09n")
+            {
+                weather.pWea.pic=11
+            }
+            if(varWeaIcon.txt=="10d"||varWeaIcon.txt=="10n")
+            {
+                weather.pWea.pic=13
+            }
+            if(varWeaIcon.txt=="13d"||varWeaIcon.txt=="13n")
+            {
+                weather.pWea.pic=15
+            }
+            if(varWeaIcon.txt=="50d"||varWeaIcon.txt=="50n")
+            {
+                weather.pWea.pic=17
+            }
+            if(varWeaIcon.txt=="11d"||varWeaIcon.txt=="11n")
+            {
+                weather.pWea.pic=19
+            }
+            if(varWeaIcon.txt=="04d"||varWeaIcon.txt=="04n"||varWeaIcon.txt=="03d"||varWeaIcon.txt=="03n")
+            {
+                weather.pWea.pic=27
+            }
+        
+        Page Exit Event
+            dim=10
+        
+Variable (string) varWeaTemp
+    Attributes
+        ID            : 10
+        Scope         : global
+        Text          : ?
+        Max. Text Size: 10
+    
+Variable (string) varWeaIcon
+    Attributes
+        ID            : 11
+        Scope         : global
+        Text          : ?
+        Max. Text Size: 10
+    
+Text t0
+    Attributes
+        ID                      : 5
+        Scope                   : local
+        Dragging                : 0
+        Send Component ID       : disabled
+        Opacity                 : 127
+        x coordinate            : 62
+        y coordinate            : 47
+        Width                   : 127
+        Height                  : 65
+        Effect                  : load
+        Effect Priority         : 0
+        Effect Time             : 300
+        Fill                    : crop image
+        Associated Keyboard     : none
+        Font ID                 : 4
+        Cropped Back. Picture ID: 4
+        Horizontal Alignment    : center
+        Vertical Alignment      : center
+        Input Type              : character
+        Text                    : -10
+        Max. Text Size          : 10
+        Word wrap               : disabled
+        Horizontal Spacing      : 0
+        Vertical Spacing        : 0
+    
+Text tMain
+    Attributes
+        ID                      : 6
+        Scope                   : global
+        Dragging                : 0
+        Send Component ID       : disabled
+        Opacity                 : 127
+        x coordinate            : 36
+        y coordinate            : 116
+        Width                   : 412
+        Height                  : 35
+        Effect                  : load
+        Effect Priority         : 0
+        Effect Time             : 300
+        Fill                    : crop image
+        Associated Keyboard     : none
+        Font ID                 : 2
+        Cropped Back. Picture ID: 4
+        Horizontal Alignment    : center
+        Vertical Alignment      : center
+        Input Type              : character
+        Text                    : нет данных
+        Max. Text Size          : 40
+        Word wrap               : disabled
+        Horizontal Spacing      : 0
+        Vertical Spacing        : 0
+    
+Text tDay
+    Attributes
+        ID                      : 7
+        Scope                   : global
+        Dragging                : 0
+        Send Component ID       : disabled
+        Opacity                 : 127
+        x coordinate            : 36
+        y coordinate            : 168
+        Width                   : 272
+        Height                  : 37
+        Effect                  : load
+        Effect Priority         : 0
+        Effect Time             : 300
+        Fill                    : crop image
+        Associated Keyboard     : none
+        Font ID                 : 2
+        Cropped Back. Picture ID: 4
+        Horizontal Alignment    : center
+        Vertical Alignment      : center
+        Input Type              : character
+        Text                    : - ... +...
+        Max. Text Size          : 50
+        Word wrap               : disabled
+        Horizontal Spacing      : 0
+        Vertical Spacing        : 0
+    
+Text tSpeed
+    Attributes
+        ID                      : 8
+        Scope                   : global
+        Dragging                : 0
+        Send Component ID       : disabled
+        Opacity                 : 127
+        x coordinate            : 190
+        y coordinate            : 208
+        Width                   : 40
+        Height                  : 36
+        Effect                  : load
+        Effect Priority         : 0
+        Effect Time             : 300
+        Fill                    : crop image
+        Associated Keyboard     : none
+        Font ID                 : 2
+        Cropped Back. Picture ID: 4
+        Horizontal Alignment    : left
+        Vertical Alignment      : center
+        Input Type              : character
+        Text                    : 
+        Max. Text Size          : 5
+        Word wrap               : disabled
+        Horizontal Spacing      : 0
+        Vertical Spacing        : 0
+    
+Text tPres
+    Attributes
+        ID                      : 9
+        Scope                   : global
+        Dragging                : 0
+        Send Component ID       : disabled
+        Opacity                 : 127
+        x coordinate            : 190
+        y coordinate            : 245
+        Width                   : 40
+        Height                  : 37
+        Effect                  : load
+        Effect Priority         : 0
+        Effect Time             : 300
+        Fill                    : crop image
+        Associated Keyboard     : none
+        Font ID                 : 2
+        Cropped Back. Picture ID: 4
+        Horizontal Alignment    : left
+        Vertical Alignment      : center
+        Input Type              : character
+        Text                    : 
+        Max. Text Size          : 6
+        Word wrap               : disabled
+        Horizontal Spacing      : 0
+        Vertical Spacing        : 0
+    
+Text t5
+    Attributes
+        ID                      : 13
+        Scope                   : local
+        Dragging                : 0
+        Send Component ID       : disabled
+        Opacity                 : 127
+        x coordinate            : 36
+        y coordinate            : 208
+        Width                   : 136
+        Height                  : 36
+        Effect                  : load
+        Effect Priority         : 0
+        Effect Time             : 300
+        Fill                    : crop image
+        Associated Keyboard     : none
+        Font ID                 : 2
+        Cropped Back. Picture ID: 4
+        Horizontal Alignment    : right
+        Vertical Alignment      : center
+        Input Type              : character
+        Text                    : ветер:
+        Max. Text Size          : 50
+        Word wrap               : disabled
+        Horizontal Spacing      : 0
+        Vertical Spacing        : 0
+    
+Text t6
+    Attributes
+        ID                      : 14
+        Scope                   : local
+        Dragging                : 0
+        Send Component ID       : disabled
+        Opacity                 : 127
+        x coordinate            : 34
+        y coordinate            : 245
+        Width                   : 139
+        Height                  : 37
+        Effect                  : load
+        Effect Priority         : 0
+        Effect Time             : 300
+        Fill                    : crop image
+        Associated Keyboard     : none
+        Font ID                 : 2
+        Cropped Back. Picture ID: 4
+        Horizontal Alignment    : right
+        Vertical Alignment      : center
+        Input Type              : character
+        Text                    : давление:
+        Max. Text Size          : 20
+        Word wrap               : disabled
+        Horizontal Spacing      : 0
+        Vertical Spacing        : 0
+    
+Text t7
+    Attributes
+        ID                      : 15
+        Scope                   : local
+        Dragging                : 0
+        Send Component ID       : disabled
+        Opacity                 : 127
+        x coordinate            : 236
+        y coordinate            : 208
+        Width                   : 40
+        Height                  : 36
+        Effect                  : load
+        Effect Priority         : 0
+        Effect Time             : 300
+        Fill                    : crop image
+        Associated Keyboard     : none
+        Font ID                 : 2
+        Cropped Back. Picture ID: 4
+        Horizontal Alignment    : left
+        Vertical Alignment      : center
+        Input Type              : character
+        Text                    : м/с
+        Max. Text Size          : 5
+        Word wrap               : disabled
+        Horizontal Spacing      : 0
+        Vertical Spacing        : 0
+    
+Text t8
+    Attributes
+        ID                      : 16
+        Scope                   : local
+        Dragging                : 0
+        Send Component ID       : disabled
+        Opacity                 : 127
+        x coordinate            : 236
+        y coordinate            : 245
+        Width                   : 90
+        Height                  : 37
+        Effect                  : load
+        Effect Priority         : 0
+        Effect Time             : 300
+        Fill                    : crop image
+        Associated Keyboard     : none
+        Font ID                 : 2
+        Cropped Back. Picture ID: 4
+        Horizontal Alignment    : left
+        Vertical Alignment      : center
+        Input Type              : character
+        Text                    : мм.рт.ст
+        Max. Text Size          : 20
+        Word wrap               : disabled
+        Horizontal Spacing      : 0
+        Vertical Spacing        : 0
+    
+Picture pWea
+    Attributes
+        ID               : 17
+        Scope            : global
+        Dragging         : 0
+        Send Component ID: disabled
+        Opacity          : 127
+        x coordinate     : 201
+        y coordinate     : 17
+        Width            : 100
+        Height           : 100
+        Effect           : load
+        Effect Priority  : 0
+        Effect Time      : 300
+        Picture ID       : 7
+    
+Button b0
+    Attributes
+        ID                                  : 4
+        Scope                               : local
+        Dragging                            : 0
+        Send Component ID                   : disabled
+        Opacity                             : 127
+        x coordinate                        : 377
+        y coordinate                        : 10
+        Width                               : 88
+        Height                              : 87
+        Effect                              : load
+        Effect Priority                     : 0
+        Effect Time                         : 300
+        Fill                                : crop image
+        Font ID                             : 0
+        Cropped Back. Picture ID (Unpressed): 4
+        Back. Picture ID (Pressed)          : 65535
+        Cropped Back. Picture ID (Pressed)  : 4
+        Horizontal Alignment                : center
+        Vertical Alignment                  : center
+        State                               : unpressed
+        Text                                : 
+        Max. Text Size                      : 10
+        Word wrap                           : disabled
+        Horizontal Spacing                  : 0
+        Vertical Spacing                    : 0
+    
+    Events
+        Touch Press Event
+            page home
+        
+Timer wakeup
+    Attributes
+        ID         : 1
+        Scope      : local
+        Period (ms): 50
+        Enabled    : yes
+    
+    Events
+        Timer Event
+            if(dim<brightness)
+            {
+                dimdelta=brightness-dim
+                dimdelta/=10
+                if(dimdelta<1)
+                {
+                    dimdelta=1
+                }
+                dim+=dimdelta
+            }else
+            {
+                wakeup.en=0
+            }
+        
+Timer swipestore
+    Attributes
+        ID         : 3
+        Scope      : local
+        Period (ms): 50
+        Enabled    : yes
+    
+    Events
+        Timer Event
+            swipex=tch0
+            swipey=tch1
+        
+Timer tmWea
+    Attributes
+        ID         : 12
+        Scope      : global
+        Period (ms): 3000
+        Enabled    : yes
+    
+    Events
+        Timer Event
+            t0.txt=varWeaTemp.txt
+            if(varWeaIcon.txt=="")
+            {
+                home.pWea.pic=6
+                weather.pWea.pic=7
+            }
+            if(varWeaIcon.txt=="01d")
+            {
+                home.pWea.pic=8
+                weather.pWea.pic=9
+            }
+            if(varWeaIcon.txt=="01n")
+            {
+                home.pWea.pic=24
+                weather.pWea.pic=25
+            }
+            if(varWeaIcon.txt=="02d")
+            {
+                home.pWea.pic=20
+                weather.pWea.pic=21
+            }
+            if(varWeaIcon.txt=="02n")
+            {
+                home.pWea.pic=22
+                weather.pWea.pic=23
+            }
+            if(varWeaIcon.txt=="09d"||varWeaIcon.txt=="09n")
+            {
+                home.pWea.pic=10
+                weather.pWea.pic=11
+            }
+            if(varWeaIcon.txt=="10d"||varWeaIcon.txt=="10n")
+            {
+                home.pWea.pic=12
+                weather.pWea.pic=13
+            }
+            if(varWeaIcon.txt=="13d"||varWeaIcon.txt=="13n")
+            {
+                home.pWea.pic=14
+                weather.pWea.pic=15
+            }
+            if(varWeaIcon.txt=="50d"||varWeaIcon.txt=="50n")
+            {
+                home.pWea.pic=16
+                weather.pWea.pic=17
+            }
+            if(varWeaIcon.txt=="11d"||varWeaIcon.txt=="11n")
+            {
+                home.pWea.pic=18
+                weather.pWea.pic=19
+            }
+            if(varWeaIcon.txt=="04d"||varWeaIcon.txt=="04n"||varWeaIcon.txt=="03d"||varWeaIcon.txt=="03n")
+            {
+                home.pWea.pic=26
+                weather.pWea.pic=27
+            }
+        
+Timer tmSleep
+    Attributes
+        ID         : 18
+        Scope      : local
+        Period (ms): 60000
+        Enabled    : yes
+    
+    Events
+        Timer Event
+            page home
+        
+TouchCap swipe
+    Attributes
+        ID   : 2
+        Scope: local
+        Value: 0
+    
+    Events
+        Touch Press Event
+            swipestore.en=1 // Start swipestore timer
+            tmSleep.en=1
+        
+        Touch Release Event
+            swipestore.en=0
+            // Touch has ended, x
+            if(tch0==0&&swipex>0)
+            {
+                swipec=swipex-tch2
+                // From Left to Right
+                if(swipec>swipedx)
+                {
+                    page home
+                }
+                // Right to Left
+                swipec2=0-swipedx
+                if(swipec<swipec2)
+                {
+                    // page settings
+                }
+            }
+            // Touch has ended, y
+            if(tch1==0)
+            {
+                swipec=swipey-tch3
+                // From Up to Down
+                if(swipec>100)
+                {
+                    //page
+                }
+                // Down to Up
+                swipec2=0-swipedy
+                if(swipec<-100)
+                {
+                    //page
+                }
+            }
+        

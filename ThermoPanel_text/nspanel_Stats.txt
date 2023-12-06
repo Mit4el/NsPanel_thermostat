@@ -1,0 +1,26 @@
+Program.s
+	0    Component(s)
+	9    Line(s) of event code
+	9    Unique line(s) of event code
+settings
+	27   Component(s)
+	171  Line(s) of event code
+	69   Unique line(s) of event code
+home
+	29   Component(s)
+	187  Line(s) of event code
+	106  Unique line(s) of event code
+weather
+	19   Component(s)
+	145  Line(s) of event code
+	64   Unique line(s) of event code
+boot
+	14   Component(s)
+	50   Line(s) of event code
+	34   Unique line(s) of event code
+
+Total
+	4    Page(s)
+	89   Component(s)
+	562  Line(s) of event code
+	171  Unique line(s) of event code
