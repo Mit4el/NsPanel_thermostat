@@ -349,7 +349,7 @@ Button b0
         Dragging                            : 0
         Send Component ID                   : disabled
         Opacity                             : 127
-        x coordinate                        : 377
+        x coordinate                        : 374
         y coordinate                        : 10
         Width                               : 88
         Height                              : 87

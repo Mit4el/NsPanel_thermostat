@@ -44,41 +44,20 @@ Variable (int32) vaTemp
     
 Variable (string) strUstWat
     Attributes
-        ID            : 17
+        ID            : 16
         Scope         : local
         Text          : 
         Max. Text Size: 50
     
-XFloat xT
+Variable (int32) burn
     Attributes
-        ID                      : 13
-        Scope                   : local
-        Dragging                : 0
-        Send Component ID       : disabled
-        Opacity                 : 127
-        x coordinate            : 156
-        y coordinate            : 147
-        Width                   : 166
-        Height                  : 92
-        Effect                  : load
-        Effect Priority         : 0
-        Effect Time             : 300
-        Fill                    : crop image
-        Associated Keyboard     : none
-        Font ID                 : 5
-        Cropped Back. Picture ID: 0
-        Horizontal Alignment    : center
-        Vertical Alignment      : center
-        Value                   : 0
-        Significant digits left : 0
-        Significant digits right: 1
-        Word wrap               : enabled
-        Horizontal Spacing      : 0
-        Vertical Spacing        : 0
+        ID   : 27
+        Scope: global
+        Value: 0
     
 XFloat xB
     Attributes
-        ID                      : 15
+        ID                      : 14
         Scope                   : local
         Dragging                : 0
         Send Component ID       : disabled
@@ -105,7 +84,7 @@ XFloat xB
     
 XFloat xW
     Attributes
-        ID                      : 16
+        ID                      : 15
         Scope                   : local
         Dragging                : 0
         Send Component ID       : disabled
@@ -130,65 +109,92 @@ XFloat xW
         Horizontal Spacing      : 0
         Vertical Spacing        : 0
     
+XFloat xT
+    Attributes
+        ID                      : 29
+        Scope                   : local
+        Dragging                : 0
+        Send Component ID       : disabled
+        Opacity                 : 127
+        x coordinate            : 156
+        y coordinate            : 127
+        Width                   : 166
+        Height                  : 92
+        Effect                  : load
+        Effect Priority         : 0
+        Effect Time             : 300
+        Fill                    : crop image
+        Associated Keyboard     : none
+        Font ID                 : 5
+        Cropped Back. Picture ID: 0
+        Horizontal Alignment    : center
+        Vertical Alignment      : center
+        Value                   : 0
+        Significant digits left : 0
+        Significant digits right: 1
+        Word wrap               : enabled
+        Horizontal Spacing      : 0
+        Vertical Spacing        : 0
+    
+Text time
+    Attributes
+        ID                      : 1
+        Scope                   : local
+        Dragging                : 0
+        Send Component ID       : disabled
+        Opacity                 : 127
+        x coordinate            : 162
+        y coordinate            : 228
+        Width                   : 152
+        Height                  : 50
+        Effect                  : load
+        Effect Priority         : 0
+        Effect Time             : 300
+        Fill                    : crop image
+        Associated Keyboard     : none
+        Font ID                 : 4
+        Cropped Back. Picture ID: 0
+        Horizontal Alignment    : center
+        Vertical Alignment      : center
+        Input Type              : character
+        Text                    : -- : --
+        Max. Text Size          : 25
+        Word wrap               : disabled
+        Horizontal Spacing      : 0
+        Vertical Spacing        : 0
+    
 Text wea
     Attributes
-        ID                  : 1
+        ID                  : 2
         Scope               : global
         Dragging            : 0
         Send Component ID   : disabled
         Opacity             : 127
-        x coordinate        : 289
+        x coordinate        : 269
         y coordinate        : 66
-        Width               : 63
-        Height              : 25
+        Width               : 96
+        Height              : 30
         Effect              : load
         Effect Priority     : 0
         Effect Time         : 300
         Fill                : solid color
         Style               : flat
         Associated Keyboard : none
-        Font ID             : 1
+        Font ID             : 3
         Back. Color         : 0
         Font Color          : 65535
         Horizontal Alignment: center
         Vertical Alignment  : center
         Input Type          : character
-        Text                : -
+        Text                : - 
         Max. Text Size      : 10
         Word wrap           : disabled
         Horizontal Spacing  : 0
         Vertical Spacing    : 0
     
-Text t2
-    Attributes
-        ID                      : 7
-        Scope                   : local
-        Dragging                : 0
-        Send Component ID       : disabled
-        Opacity                 : 127
-        x coordinate            : 188
-        y coordinate            : 117
-        Width                   : 100
-        Height                  : 30
-        Effect                  : load
-        Effect Priority         : 0
-        Effect Time             : 300
-        Fill                    : crop image
-        Associated Keyboard     : none
-        Font ID                 : 0
-        Cropped Back. Picture ID: 0
-        Horizontal Alignment    : center
-        Vertical Alignment      : center
-        Input Type              : character
-        Text                    : В помещении:
-        Max. Text Size          : 25
-        Word wrap               : disabled
-        Horizontal Spacing      : 0
-        Vertical Spacing        : 0
-    
 Text t0
     Attributes
-        ID                      : 18
+        ID                      : 17
         Scope                   : local
         Dragging                : 0
         Send Component ID       : disabled
@@ -215,7 +221,7 @@ Text t0
     
 Text t1
     Attributes
-        ID                      : 19
+        ID                      : 18
         Scope                   : local
         Dragging                : 0
         Send Component ID       : disabled
@@ -240,14 +246,41 @@ Text t1
         Horizontal Spacing      : 0
         Vertical Spacing        : 0
     
+Text t2
+    Attributes
+        ID                      : 28
+        Scope                   : local
+        Dragging                : 0
+        Send Component ID       : disabled
+        Opacity                 : 127
+        x coordinate            : 188
+        y coordinate            : 97
+        Width                   : 100
+        Height                  : 30
+        Effect                  : load
+        Effect Priority         : 0
+        Effect Time             : 300
+        Fill                    : crop image
+        Associated Keyboard     : none
+        Font ID                 : 0
+        Cropped Back. Picture ID: 0
+        Horizontal Alignment    : center
+        Vertical Alignment      : center
+        Input Type              : character
+        Text                    : В помещении:
+        Max. Text Size          : 25
+        Word wrap               : disabled
+        Horizontal Spacing      : 0
+        Vertical Spacing        : 0
+    
 Picture pWea
     Attributes
-        ID               : 20
+        ID               : 19
         Scope            : global
         Dragging         : 0
         Send Component ID: disabled
         Opacity          : 127
-        x coordinate     : 293
+        x coordinate     : 287
         y coordinate     : 10
         Width            : 57
         Height           : 57
@@ -263,7 +296,7 @@ Button bSet
         Dragging                            : 0
         Send Component ID                   : disabled
         Opacity                             : 127
-        x coordinate                        : 381
+        x coordinate                        : 374
         y coordinate                        : 11
         Width                               : 87
         Height                              : 90
@@ -344,7 +377,7 @@ Button b2
     
 Button bB
     Attributes
-        ID                                  : 21
+        ID                                  : 20
         Scope                               : global
         Dragging                            : 0
         Send Component ID                   : disabled
@@ -372,7 +405,7 @@ Button bB
     
 Button bW
     Attributes
-        ID                                  : 22
+        ID                                  : 21
         Scope                               : global
         Dragging                            : 0
         Send Component ID                   : disabled
@@ -400,7 +433,7 @@ Button bW
     
 Button b4
     Attributes
-        ID                                  : 23
+        ID                                  : 22
         Scope                               : local
         Dragging                            : 0
         Send Component ID                   : disabled
@@ -428,7 +461,7 @@ Button b4
     
 Hotspot m0
     Attributes
-        ID               : 2
+        ID               : 3
         Scope            : local
         Dragging         : 0
         Send Component ID: disabled
@@ -460,7 +493,7 @@ Hotspot m0
         
 Hotspot m1
     Attributes
-        ID               : 3
+        ID               : 4
         Scope            : local
         Dragging         : 0
         Send Component ID: disabled
@@ -492,7 +525,7 @@ Hotspot m1
         
 Hotspot m2
     Attributes
-        ID               : 24
+        ID               : 23
         Scope            : local
         Dragging         : 0
         Send Component ID: disabled
@@ -500,19 +533,19 @@ Hotspot m2
         x coordinate     : 0
         y coordinate     : 0
         Width            : 171
-        Height           : 243
+        Height           : 253
         Effect           : load
         Effect Priority  : 0
         Effect Time      : 300
     
 Hotspot mWea
     Attributes
-        ID               : 28
+        ID               : 30
         Scope            : local
         Dragging         : 0
         Send Component ID: disabled
         Opacity          : 127
-        x coordinate     : 275
+        x coordinate     : 269
         y coordinate     : 8
         Width            : 94
         Height           : 92
@@ -526,7 +559,7 @@ Hotspot mWea
         
 Timer wakeup
     Attributes
-        ID         : 4
+        ID         : 5
         Scope      : local
         Period (ms): 50
         Enabled    : yes
@@ -549,7 +582,7 @@ Timer wakeup
         
 Timer swipestore
     Attributes
-        ID         : 6
+        ID         : 7
         Scope      : local
         Period (ms): 50
         Enabled    : yes
@@ -572,6 +605,8 @@ Timer tmMode
             xB.val=settings.varTarget.val
             xW.val=settings.varWater.val
             xT.pco=65535
+            home.bB.val=settings.btBoiler.val
+            home.bW.val=settings.btWater.val
             if(modeTemp==0)
             {
                 xT.val=vaTemp.val
@@ -589,10 +624,17 @@ Timer tmMode
                 xT.val=settings.varWater.val
                 t2.txt="water:"
             }
+            if(burn.val==1)
+            {
+                b4.val=1
+            }else
+            {
+                b4.val=0
+            }
         
 Timer tmSend
     Attributes
-        ID         : 14
+        ID         : 13
         Scope      : local
         Period (ms): 2000
         Enabled    : no
@@ -611,7 +653,7 @@ Timer tmSend
         
 Timer tmSleep
     Attributes
-        ID         : 25
+        ID         : 24
         Scope      : local
         Period (ms): 30000
         Enabled    : yes
@@ -629,7 +671,7 @@ Timer tmSleep
         
 Timer dimSleep
     Attributes
-        ID         : 26
+        ID         : 25
         Scope      : local
         Period (ms): 50
         Enabled    : no
@@ -647,7 +689,7 @@ Timer dimSleep
         
 Timer tmWea
     Attributes
-        ID         : 27
+        ID         : 26
         Scope      : local
         Period (ms): 3000
         Enabled    : yes
@@ -714,7 +756,7 @@ Timer tmWea
         
 TouchCap swipe
     Attributes
-        ID   : 5
+        ID   : 6
         Scope: local
         Value: 0
     

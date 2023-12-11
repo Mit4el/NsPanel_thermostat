@@ -542,6 +542,34 @@ Dual-state Button btWater
         Horizontal Spacing                  : 0
         Vertical Spacing                    : 0
     
+Dual-state Button btAuto
+    Attributes
+        ID                                  : 27
+        Scope                               : global
+        Dragging                            : 0
+        Send Component ID                   : disabled
+        Opacity                             : 127
+        x coordinate                        : 150
+        y coordinate                        : 212
+        Width                               : 169
+        Height                              : 48
+        Effect                              : load
+        Effect Priority                     : 0
+        Effect Time                         : 300
+        Fill                                : crop image
+        Font ID                             : 0
+        Cropped Back. Picture ID (Unpressed): 0
+        Back. Picture ID (Pressed)          : 65535
+        Cropped Back. Picture ID (Pressed)  : 0
+        Horizontal Alignment                : center
+        Vertical Alignment                  : center
+        State                               : unpressed
+        Text                                : AUTO
+        Max. Text Size                      : 10
+        Word wrap                           : disabled
+        Horizontal Spacing                  : 0
+        Vertical Spacing                    : 0
+    
 Hotspot m1
     Attributes
         ID               : 24
